@@ -20,18 +20,21 @@ router.get('/', (req, res) => {
     res.render('home')
 })
 
-// Ruta para devolver la vista admin
-router.get('/admin', (req, res)=> {
-    res.render('admin')
+router.get('/publicaciones', (req, res) => {
+    res.render('home')
 })
 
-// Ruta para devolver la vista admin
-router.get('/admin/:id', (req, res)=> {
-    res.render('editar', { id: req.params.id })
+router.get('/admin/publicaciones', (req, res) => {
+    return res.render('tabla-publicaciones')
 })
 
+router.get('/admin/nueva-publicacion', (req, res)=> {
+    return res.render('nueva-publicacion')
+})
 
-
+router.get('/admin/editar-publicacion/:id', (req, res)=> {
+    res.render('editar-publicacion', { id: req.params.id })
+})
 
 
 // ==================================================
@@ -39,18 +42,18 @@ router.get('/admin/:id', (req, res)=> {
 // ==================================================
 
 // Crear nueva publicación
-router.post('/publicacion', crearPublicacion);
+router.post('/api/publicacion', crearPublicacion);
 
 // Obtener todas las publicaciones
-router.get('/publicaciones', obtenerPublicaciones);
+router.get('/api/publicaciones', obtenerPublicaciones);
 
 // Obtener una publicación
-router.get('/publicacion/:id', obtenerPublicacion)
+router.get('/api/publicacion/:id', obtenerPublicacion)
 
 // Actualizar una publicación
-router.put('/publicacion/:id', actualizarPublicacion);
+router.put('/api/publicacion/:id', actualizarPublicacion);
 
 // Eliminar una publicación
-router.delete('/publicacion/:id', eliminarPublicacion);
+router.delete('/api/publicacion/:id', eliminarPublicacion);
 
 module.exports = router;

@@ -10,18 +10,19 @@ formGuardar.addEventListener('submit', async (e) => {
     const descripcion = document.querySelector('#detalle-post').value;
     const url_imagen = document.querySelector('#url-img').value;
     const fecha = document.querySelector('#fecha').value;
+    const autor = document.querySelector('#autor').value;
 
     // Enviar al servidor
-    const response = await fetch('/publicacion', {
+    const response = await fetch('/api/publicacion', {
         method: 'post',
         headers: {
             'Content-Type':'application/json'
         },
-        body: JSON.stringify({ titulo, descripcion, url_imagen, fecha})
+        body: JSON.stringify({ titulo, descripcion, url_imagen, fecha, autor})
     })
     const data = await response.json();
 
     alert(data.msg);
-    location.href = "/"
+    location.href = "/admin/publicaciones"
 
 })

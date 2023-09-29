@@ -14,15 +14,18 @@ const PublicacionSchema = sequelize.define('Publicaciones', {
     type: DataTypes.STRING,
     allowNull: false
   },
-  fecha: {
+  fecha_publicacion: {
     type: DataTypes.DATE,
     allowNull: false,
   },
   url_imagen: {
     type: DataTypes.STRING,
     allowNull: false,
-  }
-},{
+  },
+autor: {
+  type: DataTypes.STRING,
+  allowNull: false
+}},{
   tableName: 'publicaciones',
   timestamps: false
 });

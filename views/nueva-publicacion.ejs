@@ -4,9 +4,8 @@
 
     <div class="container mt-5">
         <div class="row">
-            <div class="col">
-                <h3 class="text-center">Editar</h3>
-                <form action="#" id="form-guardar" data-id="<%= id  %>" >
+            <div class="col-md-6 mx-auto">
+                <form action="#" id="form-guardar">
                     <div class="mb-3">
                         <input type="text" id="titulo-post" class="form-control" placeholder="Título del Post">
                     </div>
@@ -19,7 +18,7 @@
                     </div>
 
                     <div class="mb-3">
-                        <input type="date" name="" id="fecha">
+                        <input type="date" class="form-control" name="" id="fecha">
                     </div>
 
                     <div class="mb-3">
@@ -34,6 +33,6 @@
     </div>
 
 
-    <script src="/js/editar.js"></script>
+    <script src="/js/nueva-publicacion.js"></script>
 
 <%-include('partials/footer')  %>

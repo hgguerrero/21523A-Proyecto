@@ -1,5 +1,5 @@
 {
-  "name": "21523a-practica-express",
+  "name": "21523A-Proyecto",
   "version": "1.0.0",
   "description": "![Node Express](https://somospnt.com/images/blog/zojuy79lo3fn3qdt7g6p.png)",
   "main": "app.js",
@@ -9,15 +9,15 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/aalesann/21523A-practica-express.git"
+    "url": "git+https://github.com/hgguerrero/21523A-Proyecto"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/aalesann/21523A-practica-express/issues"
+    "url": "https://github.com/hgguerrero/21523A-Proyecto/issues"
   },
-  "homepage": "https://github.com/aalesann/21523A-practica-express#readme",
+  "homepage": "https://github.com/hgguerrero/21523A-Proyecto#readme",
   "dependencies": {
     "cors": "^2.8.5",
     "dotenv": "^16.3.1",
